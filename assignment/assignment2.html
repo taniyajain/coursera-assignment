@@ -7,19 +7,124 @@
 	<title>Food, LLC</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="http://font.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+	<style>
+		body{
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: 'Oxygen', sans-serif;
+}
+
+/** Header **/
+#header-nav{
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+#p1{
+	border: 1px solid black;
+	margin-bottom: 15px;
+}
+#p2{
+	border: 1px solid black;
+}
+#p3{
+	border: 1px solid black;
+}
+/********************************large devices*********************************/
+@media(min-width: 1200px){
+	#p1{
+		width: 80%;
+	}
+	#p2{
+		width: 80%;
+	}
+	#p3{
+		width: 80%;
+	}
+}
+/********************************medium devices*******************************/
+@media(min-width: 992px) and (max-width: 1199px){
+	#p1{
+		width: 50%;
+	}
+	#p2{
+		width: 50%;
+	}
+	#p3{
+		width: 50%;
+	}
+}
+/*****************************small devices***********************************/
+@media(max-width: 768px){
+	#p1{
+		width: 50%;
+	}
+	#p2{
+		width: 50%;
+	}
+	#p3{
+		width: 50%;
+	}
+}
+</style>
 </head>
 <body>
 	<header>
 		<nav id="header-nav" class="navbar navbar-default">
 			<div class="container"> 
-				<div class="navbar-brand">
-					<a href="assignment2.html"><h1>Food, LLC</h1>
+				<div class="navbar-header">
+				  <div class="navbar-brand" style="font-family: Algerian" style="padding: 25px">
+					<a href="assignment2.html"><h1 style="color: #557c33; font-size: 1.5em; text-transform: uppercase;font-weight: bold;text-shadow: 1px 1px 1px #222; margin-top: 0;margin-bottom: 0;line-height: normal;">Food, LLC</h1>
 					</a>
+				  </div>
 				</div>
 			</div>
-		</nav>
+        </nav>
+        <h2 style="text-align: center; font-family: Algerian;">OUR MENU</h2>
+		<div id="collapsable-nav" class="collapse navbar-collapse" style="text-align: center;">
+					<ul> 
+				        <li>Chicken</li>
+						<li>Beef</li>
+						<li>Meat</li>
+					</ul>
+					
+		</div>
 	</header>
+    <p id="p1"> <h1>Chicken</h1>Chicken is the most common type of poultry in the world.Owing to the relative ease and low cost of raising them in comparison to animals such as cattle or hogs, chickens have become prevalent throughout the cuisine of cultures around the world, and their meat has been variously adapted to regional tastes.</p>
+    <p id="p2"></p>
+
+
+
+	<footer class="panel-footer" style="text-align: center; font-family: arial; font-size:12px; margin-top: 30px; padding-top: 35px; padding-bottom: 30px; background-color: #222; border-top: 0;">
+		<div class="container">
+			<div class="row">
+				<section id="hours" class="col-sm-4">
+					<span>Hours:</span><br>
+					Mon-Fri: 9:00am-11:00pm<br>
+					Sat: 9:00am-2:30pm<br>
+					Sunday Closed
+					<hr>
+				</section>
+				<section id="address" class="col-sm-4">
+					<span>Address</span><br>
+					Rajouri garden street no.678<br>
+					Chankyapuri 110067
+					<p>Delivery within 3-4 miles,within minimum order of 500Rs</p>
+					<hr>
+				</section>
+				<section id="testimonials" class="col-sm-4">
+					<p>"The best chinese restaurant i've been to! And that's saying a lot, since i've been to many!"</p>
+					<p>"Amazing food!! Great service!! Couldn't ask for more!"</p>
+				</section>	
+			</div>
+		</div>
+	</footer>
+
+
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
