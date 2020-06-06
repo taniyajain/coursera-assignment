@@ -1,4 +1,4 @@
-/*var speakworld = "goodbye";
+var speakworld = "goodbye";
 function speak(name) {
 	console.log(speakworld + "" + name);
 }
@@ -17,5 +17,5 @@ var greet=function () {
 		hellospeaker.speak(name[i]);
 	}
 }
-}*/
+}
 console.log (greet);
